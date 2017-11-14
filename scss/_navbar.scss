@@ -1,4 +1,3 @@
-// Styling for the navbar
 #mainNav {
 	@include sans-serif-font;
 	background-color: $blue-dark;
@@ -32,7 +31,7 @@
 
 			&:focus,
 			&:hover {
-				color: fade-out(white, .2);
+				text-decoration: underline;
 			}
 		}
 
@@ -44,7 +43,7 @@
 
 					&:focus,
 					&:hover {
-						color: fade-out(white, .2);
+						text-decoration: underline;
 					}
 				}
 			}
