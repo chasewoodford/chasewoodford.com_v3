@@ -1,0 +1,52 @@
+#mainNav {
+	@include sans-serif-font;
+	background-color: $blue-dark;
+
+	.navbar-brand {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	.navbar-toggler {
+		font-size: 12px;
+		font-weight: 800;
+		padding: 13px;
+		text-transform: uppercase;
+		color: $gray-light;
+	}
+
+	.navbar-nav {
+		> li.nav-item {
+			> a {
+				font-size: 14px;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		.navbar-brand {
+			padding: 15px 20px;
+			color: white;
+
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.navbar-nav {
+			> li.nav-item {
+				> a {
+					padding: 15px 20px;
+					color: white;
+
+					&:focus,
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

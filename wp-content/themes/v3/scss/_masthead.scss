@@ -1,0 +1,55 @@
+header.masthead {
+	@include background-cover;
+	background: no-repeat center center;
+	background-color: $blue-dark;
+	background-attachment: scroll;
+	margin-bottom: 50px;
+
+	.page-heading,
+	.post-heading,
+	.site-heading {
+		padding: 200px 0 150px;
+		color: white;
+
+		@media only screen and (min-width: 768px) {
+			padding: 200px 0;
+		}
+	}
+
+	.page-heading,
+	.site-heading {
+		text-align: center;
+
+		h1 {
+			font-size: 50px;
+			margin-top: 0;
+		}
+
+		.subheading {
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 1.1;
+			display: block;
+			margin: 10px 0 0;
+			@include sans-serif-font;
+		}
+
+		@media only screen and (min-width: 768px) {
+			h1 {
+				font-size: 80px;
+			}
+		}
+	}
+
+	.post-heading {
+		h1 {
+			font-size: 35px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			h1 {
+				font-size: 55px;
+			}
+		}
+	}
+}
