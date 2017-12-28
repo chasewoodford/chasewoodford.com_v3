@@ -21,8 +21,8 @@
 			<?php endwhile; ?>
 
 			<div id="pagination" class="clearfix">
-				<div class="past-page"><?php previous_posts_link( 'Newer Posts&nbsp;&rarr;' ); // Display a link to  newer posts, if there are any, with the text 'newer' ?></div>
-				<div class="next-page"><?php next_posts_link( 'Older Posts&nbsp;&rarr;' ); // Display a link to  older posts, if there are any, with the text 'older' ?></div>
+				<div class="past-page"><?php previous_posts_link( 'Newer Posts&nbsp;&rarr;' ); ?></div>
+				<div class="next-page"><?php next_posts_link( 'Older Posts&nbsp;&rarr;' ); ?></div>
 			</div>
 
 		<?php else : ?>

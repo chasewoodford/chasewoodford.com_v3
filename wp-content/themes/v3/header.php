@@ -1,4 +1,3 @@
-<?php ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -9,49 +8,64 @@
 	<meta name="author" content="Chase Woodford">
 
 	<title>
-		<?php bloginfo('name'); // show the blog name, from settings ?> |
-		<?php is_front_page() ? bloginfo('description') : wp_title(''); // if we're on the home page, show the description, from the site's settings - otherwise, show the title of the post or page ?>
+		<?php bloginfo('name'); ?> |
+		<?php is_front_page() ? bloginfo('description') : wp_title(''); ?>
 	</title>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-	<?php // We are loading our theme directory style.css by queuing scripts in our functions.php file,
-		// so if you want to load other stylesheets,
-		// I would load them with an @import call in your style.css
-	?>
-
-	<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-	<![endif]-->
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<header id="masthead" class="site-header">
-	<div class="container center">
-	
-		<nav class="site-navigation main-navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
-		</nav><!-- .site-navigation .main-navigation -->
+<!--Maybe use this in future-->
+<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+	<div class="container">
+		<a class="navbar-brand" href="<?php echo get_home_url(); ?>">chasewoodford.com</a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+		        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+		        aria-label="Toggle navigation">
+			Menu
+			<i class="fa fa-bars"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">playground</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">about</a>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<div class="center">
+</nav>
 
-		<div id="brand">
-			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); // Link to the home page ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Display the blog name ?></a>
-			</h1>
-			<h4 class="site-description">
-				<?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
-			</h4>
-		</div><!-- /brand -->
-		
-		<div class="clear"></div>
-	</div><!--/container -->
-		
-</header><!-- #masthead .site-header -->
+<!-- Page Header -->
+<header id="masthead" class="masthead">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading">
+					<h1>
+						<?php bloginfo( 'name' ); ?>
+					</h1>
+					<span class="subheading">
+						<?php bloginfo( 'description' ); ?>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
-<main class="container"><!-- start the page containter -->
+<!-- Main Content -->
+<main class="container">
