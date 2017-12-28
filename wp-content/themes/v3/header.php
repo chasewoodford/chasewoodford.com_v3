@@ -29,14 +29,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body 
-	<?php body_class(); 
-	// This will display a class specific to whatever is being loaded by Wordpress
-	// i.e. on a home page, it will return [class="home"]
-	// on a single post, it will return [class="single postid-{ID}"]
-	// and the list goes on. Look it up if you want more.
-	?>
->
+<body <?php body_class(); ?>>
 
 <header id="masthead" class="site-header">
 	<div class="container center">
@@ -61,4 +54,4 @@
 		
 </header><!-- #masthead .site-header -->
 
-<main class="main-fluid"><!-- start the page containter -->
+<main class="container"><!-- start the page containter -->
