@@ -3,13 +3,13 @@
 // Define version
 define( 'V3', 3.0 );
 
-// Add Rss feed support
+// Add RSS feed support
 add_theme_support( 'automatic-feed-links' );
 
 // Add post thumbnail/featured image support
 add_theme_support( 'post-thumbnails' );
 
-// Enqueue Styles and Scripts
+// Enqueue styles and scripts
 function v3_scripts()  {
 
 	// Add stylesheet

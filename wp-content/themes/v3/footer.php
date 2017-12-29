@@ -32,7 +32,7 @@
 						</a>
 					</li>
 				</ul>
-				<p class="copyright text-muted">Copyright &copy; Chase Woodford 2017</p>
+				<p class="copyright text-muted">Copyright &copy; Chase Woodford <?php echo date("Y"); ?></p>
 			</div>
 		</div>
 	</div>
