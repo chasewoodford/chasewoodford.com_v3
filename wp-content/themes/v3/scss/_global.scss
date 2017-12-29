@@ -8,10 +8,6 @@ body {
 p {
 	line-height: 1.5;
 	margin: 30px 0;
-
-	a {
-		text-decoration: underline;
-	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +16,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	@include transition-all;
+	color: $blue-link;
+	font-style: italic;
+
+	&:focus,
+	&:hover {
+		color: $blue-link;
+		text-decoration: underline;
+	}
+}
+
+.social-link {
 	color: $blue-light;
 
 	&:focus,

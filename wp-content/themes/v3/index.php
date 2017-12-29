@@ -21,15 +21,9 @@
 			<?php endwhile; ?>
 
 			<div id="pagination" class="clearfix">
-				<div class="past-page"><?php previous_posts_link( 'Newer Posts&nbsp;&rarr;' ); ?></div>
-				<div class="next-page"><?php next_posts_link( 'Older Posts&nbsp;&rarr;' ); ?></div>
+				<div class="past-page float-left"><?php previous_posts_link( '&larr;&nbsp;Newer Posts' ); ?></div>
+				<div class="next-page float-right"><?php next_posts_link( 'Older Posts&nbsp;&rarr;' ); ?></div>
 			</div>
-
-		<?php else : ?>
-
-			<article class="post error">
-				<h1 class="404">Nothing has been posted like that yet</h1>
-			</article>
 
 		<?php endif; ?>
 
