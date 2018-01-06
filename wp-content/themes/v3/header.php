@@ -37,13 +37,13 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">work</a>
+					<a class="nav-link" href="<?php echo get_home_url() . "/work"; ?>">work</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">playground</a>
+					<a class="nav-link" href="<?php echo get_home_url() . "/playground"; ?>">playground</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">about</a>
+					<a class="nav-link" href="<?php echo get_home_url() . "/about.html"; ?>">about</a>
 				</li>
 			</ul>
 		</div>
