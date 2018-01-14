@@ -21,9 +21,6 @@
 
 <body id="top" <?php body_class(); ?>>
 
-<!--Maybe use this in future-->
-<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg" id="mainNav">
 	<div class="container">
@@ -37,13 +34,16 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
+					<a class="nav-link" href="<?php echo get_home_url() . "/resources/documents/resume.pdf"; ?>">resume</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="<?php echo get_home_url() . "/work"; ?>">work</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo get_home_url() . "/playground"; ?>">playground</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo get_home_url() . "/about.html"; ?>">about</a>
+					<a class="nav-link" href="<?php echo get_home_url() . "/about"; ?>">about</a>
 				</li>
 			</ul>
 		</div>
