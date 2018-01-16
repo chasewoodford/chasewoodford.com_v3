@@ -21,82 +21,8 @@
 
 <body id="top" <?php body_class(); ?>>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg" id="mainNav">
-	<div class="container">
-		<a class="navbar-brand" href="<?php echo get_home_url(); ?>">chasewoodford.com</a>
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-		        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-		        aria-label="Toggle navigation">
-			Menu
-			<i class="fa fa-bars"></i>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo get_home_url() . "/resources/documents/resume.pdf"; ?>">resume</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo get_home_url() . "/work"; ?>">work</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo get_home_url() . "/playground"; ?>">playground</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo get_home_url() . "/about"; ?>">about</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+<?php include 'nav.php'; ?>
 
-<!-- Page Header -->
-<?php if ( is_front_page() ) : ?>
-	<header id="masthead" class="masthead">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="site-heading">
-						<h1>
-							<?php bloginfo( 'name' ); ?>
-						</h1>
-						<span class="subheading">
-							<?php bloginfo( 'description' ); ?>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-<?php elseif ( is_single() ) : ?>
-	<!--TODO: replace post-bg.jpg with post thumbnail from wp-->
-	<header class="masthead" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/post-bg.jpg')">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="post-heading">
-						<h1><?php single_post_title(); ?></h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-<?php elseif ( is_category() ) : ?>
-	<header class="masthead">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="page-heading">
-						<h1><?php single_cat_title(); ?></h1>
-<!--						<span class="subheading">-->
-<!--							TODO: Subtitle goes here-->
-<!--						</span>-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-<?php endif; ?>
+<?php include 'masthead.php'; ?>
 
-<!-- Main Content -->
 <main class="container">

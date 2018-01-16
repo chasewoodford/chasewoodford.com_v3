@@ -1,6 +1,5 @@
 </main>
 
-<!-- Footer -->
 <footer>
 	<div class="rocket"></div>
 	<div class="container">
