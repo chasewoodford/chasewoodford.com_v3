@@ -207,6 +207,9 @@ header nav ul li a {
   color: #888888;
   font-size: 14px; }
 
+.blog-image {
+  max-width: 100%; }
+
 .post-preview > a {
   color: #ffffff;
   font-style: normal; }
@@ -238,49 +241,44 @@ header nav ul li a {
   .post-preview > a > .post-title {
     font-size: 36px; } }
 
-h3#comments {
-  margin-bottom: 80px;
-  font-size: 16px; }
+code, pre {
+  font-family: monospace; }
+
+pre {
+  display: block;
+  font-size: 70%;
+  line-height: 1.2;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: black;
+  color: #ffffff;
+  padding: 0 20px; }
+
+.comment {
+  margin-bottom: 20px; }
+
+.comment-form-comment label, .comment-form-author label, .comment-form-email label, .comment-form-url label {
+  display: block; }
+
+.comment-form-comment textarea, .comment-form-author textarea, .comment-form-email textarea, .comment-form-url textarea {
+  max-width: 100%; }
 
 .commentlist {
   list-style: none;
-  margin: 0; }
-  .commentlist .comment {
-    margin: 0 0 40px 50px;
-    padding: 20px;
-    position: relative;
-    list-style: none;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
-    .commentlist .comment .children {
-      margin-top: 40px; }
-  .commentlist .comment-author {
-    float: left;
-    margin-right: 10px; }
-    .commentlist .comment-author img {
-      position: absolute;
-      left: -50px;
-      top: 5px;
-      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
-    .commentlist .comment-author .says {
-      display: none; }
+  padding: 0; }
 
 .comment-meta {
   font-size: 12px;
   margin-bottom: 10px; }
 
+.comment-notes {
+  font-size: 80%; }
+
 .comment-subscription-form {
   margin-bottom: 0;
   font-size: 14px; }
-
-#respond {
-  margin-bottom: 80px; }
-  #respond > h3 {
-    font-size: 16px;
-    margin-bottom: 20px; }
-  #respond form label {
-    color: #888888; }
 
 footer {
   min-height: 328px;
