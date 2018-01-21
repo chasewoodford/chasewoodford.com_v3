@@ -246,15 +246,15 @@ code, pre {
 
 pre {
   display: block;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff;
   font-size: 70%;
   line-height: 1.2;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
-  white-space: pre-wrap;
-  background-color: black;
-  color: #ffffff;
-  padding: 0 20px; }
+  white-space: pre-wrap; }
 
 .comment {
   margin-bottom: 20px; }

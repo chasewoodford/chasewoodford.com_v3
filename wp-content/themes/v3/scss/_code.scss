@@ -4,13 +4,13 @@ code, pre {
 
 pre {
 	display: block;
+	padding: 20px;
+	background-color: black;
+	color: $white;
 	font-size: 70%;
 	line-height: 1.2;
 	word-break: break-all;
 	word-wrap: break-word;
 	white-space: pre;
 	white-space: pre-wrap;
-	background-color: black;
-	color: $white;
-	padding: 0 20px;
 }
