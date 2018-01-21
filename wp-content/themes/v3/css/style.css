@@ -3,14 +3,15 @@
  * Copyright 1984-2018 Chase Woodford
  */
 body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #ffffff;
   background-color: #0d98e3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  -webkit-tap-highlight-color: #0d98e3; }
 
 p {
   line-height: 1.5;
-  margin: 30px 0; }
+  margin: 0 0 30px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', 'Times New Roman', serif;
@@ -67,9 +68,6 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #0d98e3; }
 
 #mainNav {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
