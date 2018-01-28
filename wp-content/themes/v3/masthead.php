@@ -23,6 +23,11 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
                         <h1><?php single_post_title(); ?></h1>
+	                    <?php if ( get_post_meta( $post->ID, 'sub-title', true ) ) : ?>
+		                    <span class="subheading">
+	                            <?php echo get_post_meta( $post->ID, 'sub-title', true ); ?>
+	                        </span>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -35,21 +40,28 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="page-heading">
                         <h1><?php single_cat_title(); ?></h1>
+                        <?php if ( get_post_meta( $post->ID, 'sub-title', true ) ) : ?>
+		                    <span class="subheading">
+	                            <?php echo get_post_meta( $post->ID, 'sub-title', true ); ?>
+	                        </span>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-<?php elseif ( is_page( 'about' ) ) : ?>
+<?php elseif ( is_page() ) : ?>
 	<header class="masthead">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-10 mx-auto">
 					<div class="page-heading">
 						<h1><?php the_title(); ?></h1>
-                        <span class="subheading">
-                            This is what I do.
-                        </span>
+                        <?php if ( get_post_meta( $post->ID, 'sub-title', true ) ) : ?>
+							<span class="subheading">
+	                            <?php echo get_post_meta( $post->ID, 'sub-title', true ); ?>
+	                        </span>
+                        <?php endif; ?>
 					</div>
 				</div>
 			</div>
