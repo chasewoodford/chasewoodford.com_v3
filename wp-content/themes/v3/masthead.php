@@ -16,8 +16,7 @@
         </div>
     </header>
 <?php elseif ( is_single() ) : ?>
-    <!--TODO: replace post-bg.jpg with post thumbnail from wp-->
-    <header class="masthead" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
@@ -34,7 +33,7 @@
         </div>
     </header>
 <?php elseif ( is_category() ) : ?>
-    <header class="masthead">
+	<header class="masthead" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
@@ -51,7 +50,7 @@
         </div>
     </header>
 <?php elseif ( is_page() ) : ?>
-	<header class="masthead">
+	<header class="masthead" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-10 mx-auto">
