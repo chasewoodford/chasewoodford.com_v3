@@ -73,6 +73,7 @@ img::-moz-selection {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #0d98e3; }
   #mainNav .navbar-brand {
+    color: white;
     font-size: 14px;
     font-style: normal;
     letter-spacing: 1px; }
@@ -81,15 +82,16 @@ img::-moz-selection {
     font-weight: 800;
     padding: 13px;
     text-transform: uppercase;
-    color: #777777; }
+    color: #ffffff; }
+    #mainNav .navbar-toggler:focus {
+      outline: none; }
   #mainNav .navbar-nav > li.nav-item > a {
     font-size: 14px;
     font-style: normal;
     letter-spacing: 1px; }
   @media only screen and (min-width: 992px) {
     #mainNav .navbar-brand {
-      padding: 15px 20px;
-      color: white; }
+      padding: 15px 20px; }
       #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
         text-decoration: underline; }
     #mainNav .navbar-nav > li.nav-item > a {
@@ -243,6 +245,9 @@ header nav ul li a {
 
 code, pre {
   font-family: monospace; }
+
+code {
+  color: #ff9f00; }
 
 pre {
   display: block;

@@ -8,7 +8,7 @@
             <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto text-right pr-3 pr-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo get_home_url() . "/resources/documents/resume.pdf"; ?>">resume</a>
                 </li>

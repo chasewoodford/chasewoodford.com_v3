@@ -3,6 +3,7 @@
 	background-color: $blue-dark;
 
 	.navbar-brand {
+		color: white;
 		font-size: 14px;
 		font-style: normal;
 		letter-spacing: 1px;
@@ -13,7 +14,11 @@
 		font-weight: 800;
 		padding: 13px;
 		text-transform: uppercase;
-		color: $gray-light;
+		color: $white;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	.navbar-nav {
@@ -29,7 +34,6 @@
 	@media only screen and (min-width: 992px) {
 		.navbar-brand {
 			padding: 15px 20px;
-			color: white;
 
 			&:focus,
 			&:hover {
