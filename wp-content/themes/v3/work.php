@@ -17,7 +17,7 @@
     while($work_query->have_posts()) : $work_query->the_post(); ?>
 
 		<div class="col-md-4">
-			<div class="mb-4 item item-1">
+			<div class="mb-4 item" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
 				<div class="item-content">
 					<div class="position-relative item-top-content">
 						<div class="bg-white p-3 w-100 item-top-content-inner">
