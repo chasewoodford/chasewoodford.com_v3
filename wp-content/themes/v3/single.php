@@ -27,11 +27,15 @@
                     <?php endif; ?>
 		        </div>
 
-	            <hr/>
+            <?php endwhile; ?>
 
-			<?php endwhile; ?>
+			<?php if ( comments_open() || '0' != get_comments_number() ) : ?>
 
-            <?php if ( comments_open() || '0' != get_comments_number() ) comments_template( '', true ); ?>
+				<hr/>
+
+				<?php comments_template( '', true ); ?>
+
+			<?php endif; ?>
 
 		<?php endif; ?>
 
