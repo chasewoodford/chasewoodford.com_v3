@@ -20,19 +20,21 @@
         <?php $see_it_live = get_post_meta($post->ID, 'see-it-live', true); ?>
 
 		<div class="col-md-4">
-			<div class="mb-4 item" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+			<div class="mb-4 item" style="background: url('<?php the_post_thumbnail_url(); ?>') top center no-repeat;">
 				<div class="item-content">
 					<div class="position-relative item-top-content">
-						<div class="bg-white p-3 w-100 item-top-content-inner">
+						<div class="bg-white py-2 px-3 w-100 item-top-content-inner">
 							<a class="small text-uppercase item-title-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-							<p class="mb-0 text-muted item-description">
-								<?php echo $item_description; ?>
-							</p>
 						</div>
 					</div>
 					<div class="bg-white pt-0 px-3 pb-3 item-add-content">
 						<div class="item-add-content-inner">
 							<div class="row">
+								<div class="col-12">
+									<p class="mb-3 text-muted item-description">
+                                        <?php echo $item_description; ?>
+									</p>
+								</div>
 								<div class="col-12">
 									<a class="float-left small" href="<?php the_permalink(); ?>">Learn more&nbsp;&raquo;</a>
 									<?php if ( $see_it_live ) : ?>
