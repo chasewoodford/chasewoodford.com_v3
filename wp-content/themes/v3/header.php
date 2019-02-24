@@ -11,9 +11,9 @@
 	</script>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="Personal website for Chase Woodford">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Chase Woodford">
+    <meta name="theme-color" content="#0d98e3">
 
 	<title>
 		<?php bloginfo('name'); ?> |
