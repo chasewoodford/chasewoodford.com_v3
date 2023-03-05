@@ -6,10 +6,10 @@
 </head>
 <body>
 <?php
-$username = "dbo541682804";
-$password = "8s3IAftWzK5BWPL";
-$hostname = "db541682804.db.1and1.com";
-$database = "db541682804";
+$username = "";
+$password = "";
+$hostname = "";
+$database = "";
 
 //connect to database
 $dbhandle = mysqli_connect($hostname, $username, $password, $database)
@@ -27,7 +27,7 @@ $result = mysqli_query($dbhandle, $order);
 
 //fetch data
 while ($row = mysqli_fetch_array($result)) {
-    $entry .= "['".$row{'date'}."',".$row{'weight'}."],";
+    $entry .= "['".$row['date']."',".$row['weight']."],";
 }
 
 //close the connection
@@ -68,9 +68,9 @@ mysqli_close($dbhandle);
     google.setOnLoadCallback(drawChart);
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
-        ['Date',	'Weight'],
-        <?php echo $entry ?>
-    ]);
+            ['Date',	'Weight'],
+            <?php echo $entry ?>
+        ]);
 
         var options = {
             title: 'Weight Tracker',
@@ -87,9 +87,8 @@ mysqli_close($dbhandle);
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript">
     $(function() {
-        $( "#date" ).datepicker({ dateFormat: 'yy-mm-dd' });
+        $("#date").datepicker({ dateFormat: 'yy-mm-dd' });
     });
 </script>
-
 </body>
 </html>

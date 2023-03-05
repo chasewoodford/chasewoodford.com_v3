@@ -2,12 +2,12 @@
 
 $pin = $_POST['pin'];
 
-if($pin === 'esahc'){
+if ($pin === '') {
 
-    $username = "dbo541682804";
-    $password = "8s3IAftWzK5BWPL";
-    $hostname = "db541682804.db.1and1.com";
-    $database = "db541682804";
+    $username = "";
+    $password = "";
+    $hostname = "";
+    $database = "";
 
     //connect to database
     $dbhandle = mysqli_connect($hostname, $username, $password, $database)
@@ -28,7 +28,7 @@ if($pin === 'esahc'){
 
     //declare order variable
     $result = mysqli_query($dbhandle, $order);
-    if($result){
+    if ($result) {
         echo("Input data is great success! " . $date . " and " . $weight);
     } else {
         echo("Input data is #fail");
@@ -40,7 +40,7 @@ if($pin === 'esahc'){
 ?>
 
 <script type="text/javascript" language="JavaScript">
-    setTimeout(function () {
+    setTimeout(function() {
         location.href = 'http://www.chasewoodford.com/playground/weight-tracker';
     }, 5000);
 </script>
